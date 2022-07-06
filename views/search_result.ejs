@@ -27,7 +27,6 @@
         <% hotels.forEach(function(hotel){ %>
             <% if(hotel.Cluster != Initcluster){ %>
                 <% Initcluster = hotel.Cluster; %>
-                <span><%- Initcluster%></span>
                 <a href="/hotel/<%- hotel.Cluster %>" class="hotel-item-result-link">
                     <div class="hotel-item-result">
                         <img src="<%- hotel.Image %>" alt="" class="hotel-item-result-img">

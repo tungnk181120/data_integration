@@ -22,7 +22,7 @@ router.get('/search_result', function(req, res, next) {
   //     res.render('user/search', { title: 'Search results', products: products })
   //   }
   // })
-  hotelsModel.find({City: req.query.searchname}, function(err, hotels){
+  hotelsModel.find({City: req.query.searchname}).exec( function(err, hotels){
     res.render('search_result', {title: "Search results", hotels:hotels})
   })
   //res.send(req.query.search-query)

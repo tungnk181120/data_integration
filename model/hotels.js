@@ -13,7 +13,7 @@ const hotelsSchema = mongoose.Schema({
   Url: String,
   address: String,
   Stars: String,
-  Price: String,
+  Price: Number,
   Rating: String,
   number_review: String,
   Reviews: String,
